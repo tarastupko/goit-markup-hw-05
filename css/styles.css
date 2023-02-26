@@ -60,7 +60,7 @@ nav.navigation {
 .main-menu li a:hover,
 .main-menu li a:focus {
     color: #404BBF;
-    transition: transform 250ms;
+    transition: color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -117,18 +117,18 @@ ul.main-menu {
 .contact-info a:hover,
 .contact-info a:focus {
     color: #404BBF;
-    transition: transform 250ms;
+    transition: color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section.baner {
-    margin: 0;
-    
-    background-image: linear-gradient(0deg , rgba(46, 47, 66, 0.7), rgba(46,47,66,0.7)),url("../images/baner-image.jpg");
+background-image: linear-gradient(0deg, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/baner-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 
@@ -144,7 +144,7 @@ color: #fff;
 }
 
 .button-order-service {
-    background: #4D5AE5;
+    background-color: #4D5AE5;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     border-radius: 4px;
     padding: 16px 32px;
@@ -161,8 +161,8 @@ color: #fff;
 }
 .button-order-service button:hover,
 .button-order-service button:focus {
-    background: #404BBF;
-    transition: transform 250ms;
+    background-color: #404BBF;
+    transition: background-color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-advantages {
@@ -303,6 +303,8 @@ a.team-social-link {
 
 .team-social-link:hover,.team-social-link:focus {
 background-color: #404BBF;
+transition: background-color 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 ul.list-of-customers {
@@ -323,14 +325,14 @@ li.customers-element {
 {
     border: 1px solid #404BBF;
     fill: #404BBF;
-    transition: transform 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms, fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-element-link:hover svg,
 .customers-element-link:focus svg {
 
     fill: #404BBF;
-    transition: transform 250ms;
+    transition: fill 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -393,22 +395,25 @@ span.bluecolor {
 
 .list-of-category button:hover,
 .list-of-category button:focus {
-background: #404BBF;
+background-color: #404BBF;
 box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 2px 1px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
 color: #fff;
 border-color: #404BBF;
-transition: transform 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms,box-shadow 250ms,color 250ms,border-color 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-order-service:hover,
 .button-order-service:focus {
-background: #404BBF;
+background-color: #404BBF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 color: #fff;
-transition: transform 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms,
+    box-shadow 250ms,
+    color 250ms,
+    border-color 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-advantages-element h3 {
@@ -432,7 +437,7 @@ transition: transform 250ms;
 .work-one:hover
 {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-transition: transform 250ms;
+transition: box-shadow 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 li.work-one {
@@ -584,8 +589,8 @@ section.section.our-portfolio {
 }
 
 .footer-social-link:hover,.footer-social-link:focus{
-    background: #31D0AA;
-    transition: transform 250ms;
+    background-color: #31D0AA;
+    transition: background-color 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -637,10 +642,12 @@ section.section.our-portfolio {
     border-radius: 50%;
 }
 
-.modal-close:active {
+.modal-close:active,.modal-close:hover,.modal-close:focus {
 
-    background: #404BBF;
+    background-color: #404BBF;
     fill: #FCFCFC;
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
